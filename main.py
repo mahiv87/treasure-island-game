@@ -22,3 +22,8 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 ''')
 print("Welcome to Treasure Island")
 print("Your mission is to find the treasure!")
+
+left_or_right = input("You're at a cross road. Where do you want to go? Type 'left' or 'right")
+if left_or_right.lower() == "right":
+    print("You fell into a pit of venomous lobsters! Game over.")
+
