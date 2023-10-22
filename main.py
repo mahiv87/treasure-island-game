@@ -23,11 +23,17 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 print("Welcome to Treasure Island")
 print("Your mission is to find the treasure!")
 
-left_or_right = input("You're at a cross road. Where do you want to go? Type 'left' or 'right")
+left_or_right = input("You're at a cross road. Where do you want to go? Type 'left' or 'right'\n")
 if left_or_right.lower() == "right":
     print("You fell into a pit of venomous lobsters! Game over.")
 if left_or_right.lower() == "left":
-    swim_wait = input("You arrive at a river. Do you want to swim or wait for a boat? Type 'swim' or 'wait'")
+    swim_wait = input("You arrive at a river. Do you want to swim or wait for a boat? Type 'swim' or 'wait'\n")
     if swim_wait.lower() == "swim":
         print("Your leg became trapped in a beaver's dam and you drowned! Game over.")
+    if swim_wait.lower() == 'wait':
+        door = input("You arrive at three mystery doors. Choose 'red', 'blue', or 'yellow'\n")
+        if door.lower() == 'red' or door.lower() == 'blue':
+            print("The door locks behind you. No one hears from you again... Game over.")
+        else:
+            print("Congratulations you found the treasure!")
 
