@@ -34,6 +34,11 @@ if left_or_right.lower() == "left":
         door = input("You arrive at three mystery doors. Choose 'red', 'blue', or 'yellow'\n")
         if door.lower() == 'red' or door.lower() == 'blue':
             print("The door locks behind you. No one hears from you again... Game over.")
-        else:
+        elif door.lower() == "yellow":
             print("Congratulations you found the treasure!")
-
+        else:
+            print("The Gods have smite you! Game over.")
+    else:
+        print("The Gods have smite you! Game over.")
+else:
+    print("The Gods have smite you! Game over.")
